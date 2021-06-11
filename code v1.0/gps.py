@@ -25,7 +25,11 @@ def gps():
 
     try:
         g = geocoder.ip('me')
-        #raise CouldnResolveIP
+####################################################################
+############### Use Case GPS not WORKING############################
+        # raise CouldnResolveIP
+
+####################Correcting Accuracy##############################
         longitude = g.latlng[0] + 0.010
         latitude = g.latlng[1] + 0.0060
 

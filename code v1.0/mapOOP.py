@@ -82,8 +82,9 @@ class map(tk.Tk):
     def station_button(self):
 
         longUser, latUser, distance = gps.gps()
-
-        #Test Bench IF we were inside PAPA
+#############################################################################################
+#######################Test Bench IF we were inside PAPA#####################################
+#############################################################################################
         longUser, latUser = 38.28424, 21.78855
 
         if longUser is None:
@@ -95,7 +96,7 @@ class map(tk.Tk):
             messagebox.showinfo("info", info)
 
             station = "ΠΑΙΔΑΓΩΓΙΚΟ"
-            df = ep.initialize(which=1)  # read classroom excel
+            df = ep.initialize(which=1)  # read busStation excel
 
             coordinatesList = ep.getTheList(df)
             # print(coordinatesList)
